@@ -1,6 +1,5 @@
 from django.db import models
 from patients.models import Patient
-
 # Create your models here.
 
 class WorkCategory(models.Model):
