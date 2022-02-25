@@ -4,6 +4,7 @@ from rest_framework.generics import (
     ListAPIView,
 )
 from django.http.response import JsonResponse
+
 from doctors.api.serializers import (
     DoctorListSerializer,
     DoctorSerializer,
