@@ -121,7 +121,7 @@ class DoctorCommentsAPIView(ListAPIView):
         if not comments:
             return JsonResponse(data=[], status=200, safe=False)
         print(comments)
-        serializer = AppointmentListSerializer(
+        serializer = CommentListSerializer(
             comments, many=True, context={"request": self.request}
         )
         return JsonResponse(data=serializer.data, safe=False)
